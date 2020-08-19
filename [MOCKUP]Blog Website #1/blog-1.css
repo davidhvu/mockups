@@ -10,6 +10,22 @@
 /*  */
 /* #626567 */
 
+#article-sect {
+    padding-bottom: 4rem;
+}
 #show-more {
+    margin-top: -2rem;
     margin-bottom: 2rem;
+    
+}
+
+#about-sect {
+    padding-bottom: 4rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
 }
