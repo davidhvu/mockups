@@ -1,6 +1,5 @@
 #space-btween-1-2 {
     padding-bottom: 1rem;
-    margin-bottom: 2rem;
 }
 
 .navbar {
@@ -9,6 +8,12 @@
 }
 /*  */
 /* #626567 */
+
+#welcome-bg {
+    background-color: #343A40; 
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
 
 #article-sect {
     padding-bottom: 4rem;
