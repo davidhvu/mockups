@@ -1,5 +1,5 @@
 #space-btween-1-2 {
-    padding-bottom: 1rem;
+    padding-bottom: 4rem;
 }
 
 .navbar {
@@ -32,5 +32,7 @@ img {
     max-width: 100%;
 }
 
-.container {
-}
+.carousel-inner > .carousel-item > img {
+    width:60vw;
+    height:45vh;
+  }
