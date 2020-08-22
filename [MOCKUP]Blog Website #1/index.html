@@ -48,7 +48,7 @@
                 </form> -->
         </nav>
 
-        <div class="container-fluid" id="welcome-bg">
+        <!-- <div class="container-fluid" id="welcome-bg">
           <div class="container" >
             <div class="row">
                   <div class="col-7">
@@ -58,6 +58,16 @@
                     <img src="https://i.imgur.com/UFhjLxQ.jpg" alt="Stairs with railing in the evening">
                     <img src="https://i.imgur.com/1yg8Izx.jpg" alt="stacked rocks on the beach">
                   </div>
+            </div>
+          </div>
+        </div> -->
+        <div class="container-fluid" id="welcome-bg">
+          <div class="parallax">
+            <div class="parallax__layer parallax__layer--back">
+              Back to the back of the back
+            </div>
+            <div class="parallax__layer parallax__layer--base">
+              Base of the base and to the other base
             </div>
           </div>
         </div>
@@ -200,12 +210,23 @@
         </div>
        
         <!--Email Sign Up Section-->
-        <div class="container">
+        <div class="container-fluid d-flex justify-content-center" id="email-bg">
             <div class="row">
                 <div class="col-12">
-                    EMAIL Stay In Touch
-                    <button>Stay In Touch</button>
+                  <h3>Stay in touch.</h3>
+                  
                 </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <form class="form-inline">
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputEmail" class="sr-only">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="email@email.com">
+                  </div>
+                  <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                </form>
+              </div>
             </div>
         </div>
 
