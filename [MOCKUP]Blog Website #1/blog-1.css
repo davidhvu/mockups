@@ -15,25 +15,6 @@
     padding-bottom: 1rem;
 }
 
-.parallax {
-    perspective: 1px;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-  .parallax__layer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-  .parallax__layer--base {
-    transform: translateZ(0);
-  }
-  .parallax__layer--back {
-    transform: translateZ(-1px);
-  }
 
 #article-sect {
     padding-bottom: 4rem;
@@ -53,16 +34,26 @@ img {
 }
 
 .carousel-inner > .carousel-item > img {
-    width:60vw;
-    height:45vh;
+    width:42rem;
+    height:35rem;
   }
 
 #email-bg {
     background-color: #343A40; 
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 #email-bg > .row > .col-12 > h3 {
     color: white;
+}
+
+
+#footer-sect {
+
+}
+
+#backtop-btn {
+  text-decoration: none;
+  color: #343A40 ;
 }
