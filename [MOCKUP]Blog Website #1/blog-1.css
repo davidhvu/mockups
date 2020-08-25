@@ -48,12 +48,16 @@ img {
     color: white;
 }
 
-
 #footer-sect {
-
+    padding-top: 2rem;
 }
 
-#backtop-btn {
+a {
   text-decoration: none;
   color: #343A40 ;
 }
+
+a:hover {
+  text-decoration: none;
+}
+
