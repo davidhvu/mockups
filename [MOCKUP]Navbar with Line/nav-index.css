@@ -1,0 +1,23 @@
+nav {
+    border-bottom: 1px solid black
+}
+
+nav a {
+    transition: 0.3s ease !important;
+    border-top: 4px solid #F8F9FA !important;
+    border-bottom: 4px solid #F8F9FA;
+    border-right:  4px solid #F8F9FA;
+    border-left: 4px solid #F8F9FA;
+    padding-top: 4px !important;
+
+}
+
+nav a:hover {
+    
+    border-top:4px solid red !important;
+    padding-top: 4px !important;
+    padding-bottom: 4px;
+    border-bottom: 4px solid red; 
+    border-right: 2px solid blue;
+    border-left: 2px solid blue;
+}
