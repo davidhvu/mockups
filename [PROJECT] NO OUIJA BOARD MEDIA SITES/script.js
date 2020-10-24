@@ -2,16 +2,21 @@
 
 let movies = ["Hereditary", "Veronica",  "Ouija", "Ouija: Origins of Evil", "The Exorcist", "Witchboard", "Conjuring 2", "What Lies Beneath", "Paranormal Activity", "The Pact", "Ouija House"]
 
-let moviesLowerCase = movies.map(title => title.toLowerCase())
+
+const moviesLowerCase = movies.map(title => title.toLowerCase())
 console.log(moviesLowerCase)
 
 function filterMovie(movieArr,userInput) {
-    movieArr.filter(function (el) {
-        return el.toLowerCase().indexOf(userInput.toLowerCase()) !== -1
-    })
+    return movieArr.filter(function (el) {
+        // console.log(el)
+        // console.log(userInput)
+        // console.log(el.indexOf(userInput.toLowerCase()) !== -1)
+        return el.indexOf(userInput.toLowerCase()) !== -1;
+    }) 
 }
 
-console.log(filterMovie(moviesLowerCase, "ouija"))
+console.log(filterMovie(moviesLowerCase, 'ouija'))
+
 
 const searchBtn = document.getElementById('searchBtn')
 searchBtn.addEventListener('click', function() {
