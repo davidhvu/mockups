@@ -8,9 +8,6 @@ console.log(moviesLowerCase)
 
 function filterMovie(movieArr,userInput) {
     return movieArr.filter(function (el) {
-        // console.log(el)
-        // console.log(userInput)
-        // console.log(el.indexOf(userInput.toLowerCase()) !== -1)
         return el.indexOf(userInput.toLowerCase()) !== -1;
     }) 
 }
@@ -22,7 +19,7 @@ const searchBtn = document.getElementById('searchBtn')
 searchBtn.addEventListener('click', function() {
     const searchTerm = document.getElementById('searchTerm').value
     console.log(searchTerm)
-    console.log(filterMovie(movies, searchTerm))
+    console.log(filterMovie(moviesLowerCase, searchTerm))
     
 })
 
