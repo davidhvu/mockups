@@ -19,7 +19,13 @@ const searchBtn = document.getElementById('searchBtn')
 searchBtn.addEventListener('click', function() {
     const searchTerm = document.getElementById('searchTerm').value
     console.log(searchTerm)
-    console.log(filterMovie(moviesLowerCase, searchTerm))
-    
+    const searchResult = filterMovie(moviesLowerCase, searchTerm)
+    const divResult = document.createElement('p')
+    divResult.innerHTML = searchResult
+
+    const space1 = document.getElementById('space1')
+    const space2 = document.getElementById('space2')
+    document.body.insertBefore(space1, space2)
+
 })
 
