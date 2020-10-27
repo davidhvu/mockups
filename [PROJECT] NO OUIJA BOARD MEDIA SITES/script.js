@@ -12,7 +12,10 @@ function filterMovie(movieArr,userInput) {
     }) 
 }
 
-console.log(filterMovie(moviesLowerCase, 'ouija'))
+function capitalize_Words(str)
+{
+ return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+}
 
 
 const searchBtn = document.getElementById('searchBtn')
@@ -22,10 +25,10 @@ searchBtn.addEventListener('click', function() {
     const searchResult = filterMovie(moviesLowerCase, searchTerm)
     const divResult = document.createElement('p')
     divResult.innerHTML = searchResult
-
-    const space1 = document.getElementById('space1')
-    const space2 = document.getElementById('space2')
-    document.body.insertBefore(space1, space2)
+    capitalize_Words(divResult)
+    console.log(divResult)
+    const firstCol = document.getElementById('first-col')
+    firstCol.appendChild(divResult)
 
 })
 
