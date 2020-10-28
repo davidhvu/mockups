@@ -12,9 +12,13 @@ function filterMovie(movieArr,userInput) {
     }) 
 }
 
-function capitalize_Words(str)
-{
- return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+function toTitleCase(str) {
+    return str.replace(
+      /\w\S*/g, 
+      function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      }
+    );
 }
 
 
@@ -24,8 +28,10 @@ searchBtn.addEventListener('click', function() {
     console.log(searchTerm)
     const searchResult = filterMovie(moviesLowerCase, searchTerm)
     const divResult = document.createElement('p')
-    divResult.innerHTML = searchResult
-    capitalize_Words(divResult)
+    const stringfyResult = searchResult.toString()
+    const spacedResult = stringfyResult.replace(/,/g, ', ')
+    const searchTitleCaseResult = toTitleCase(spacedResult)
+    divResult.innerHTML = searchTitleCaseResult
     console.log(divResult)
     const firstCol = document.getElementById('first-col')
     firstCol.appendChild(divResult)
