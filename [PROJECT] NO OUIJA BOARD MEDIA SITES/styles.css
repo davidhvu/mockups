@@ -4,10 +4,15 @@
     align-items: center;
 }
 
-.h-padding {
+.b-padding {
     padding-bottom: 2rem;
+}
+
+.b-margin {
+  margin-bottom: 2rem;
 }
 
 #form-area {
   padding-bottom: 1rem;
 }
+

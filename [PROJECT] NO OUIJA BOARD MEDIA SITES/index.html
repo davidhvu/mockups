@@ -42,12 +42,34 @@
         <div class="jumbotron-fluid v-center">
             <div class="container d-flex justify-content-center align-items-center">
                 <div class="row">
-                    <div class="col" id="first-col">
-                        <h1 class="h-padding">Is A Ouija In ____?</h1>
+                    <div class="col-10" id="first-col">
+                        <h1 class="b-padding">Is A Ouija In ___?</h1>
+                        <form class="b-padding" id="d-form">
+                          <div class="form-group">
+                            <h4>Request Form to Add a Missing Title</h4>
+                            <label for="title">Title of Media</label>
+                            <input type="text" class="form-control" id="mediaTitle" aria-describedby="emailHelp" placeholder="Title of TV show, movie, podcast, etc.">
+                          </div>
+                          <div class="form-group">
+                            <label for="timeOfTitle">Time When Ouija Scene Happens</label>
+                            <input type="text" class="form-control" id="timeOfTitle" placeholder="3:24-14:42">
+                          </div>
+                          <div class="form-group">
+                              <label for="exampleInputEmail1">Email address (OPTIONAL)</label>
+                              <input type="email" class="form-control" id="optionalEmailAddress" aria-describedby="emailHelp" placeholder="Enter email">
+                              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else. This will help us let you know if we have approve request, if you'd like. </small>
+                            </div>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+
+                        <button type="button" class="btn btn-light b-margin" id="display-btn">Missing One?</button>
+
                         <div class="input-group" id="form-area">
-                            <input type="text" class="form-control" id="searchTerm" placeholder="Search Here">
-                            <input class="btn btn-primary" type="submit" value="Submit" id="searchBtn" >
-                        </div>
+                          <input type="text" class="form-control" id="searchTerm" placeholder="Search Here">
+                          <input class="btn btn-primary" type="submit" value="Submit" id="search-btn" >
+                      </div>
+                      </div>
+                        
                     </div>
                 </div>
             </div>

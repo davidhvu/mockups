@@ -4,7 +4,6 @@ let movies = ["Hereditary", "Veronica",  "Ouija", "Ouija: Origins of Evil", "The
 
 
 const moviesLowerCase = movies.map(title => title.toLowerCase())
-console.log(moviesLowerCase)
 
 function filterMovie(movieArr,userInput) {
     return movieArr.filter(function (el) {
@@ -22,7 +21,7 @@ function toTitleCase(str) {
 }
 
 
-const searchBtn = document.getElementById('searchBtn')
+const searchBtn = document.getElementById('search-btn')
 searchBtn.addEventListener('click', function() {
     const searchTerm = document.getElementById('searchTerm').value
     console.log(searchTerm)
@@ -32,9 +31,19 @@ searchBtn.addEventListener('click', function() {
     const spacedResult = stringfyResult.replace(/,/g, ', ')
     const searchTitleCaseResult = toTitleCase(spacedResult)
     divResult.innerHTML = searchTitleCaseResult
-    console.log(divResult)
     const firstCol = document.getElementById('first-col')
     firstCol.appendChild(divResult)
 
 })
 
+const displayBtn = document.getElementById('display-btn')
+const displayForm = document.getElementById('d-form')
+displayForm.style.display = 'none'
+console.log(displayForm)
+displayBtn.addEventListener('click', function() {
+    if (displayForm.style.display = 'none') {
+        displayForm.style.display = 'block'
+    } else (displayForm.style.display = 'block') 
+        displayForm.style.display = 'none'
+    
+})
