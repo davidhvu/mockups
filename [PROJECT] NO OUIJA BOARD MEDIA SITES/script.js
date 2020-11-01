@@ -37,13 +37,16 @@ searchBtn.addEventListener('click', function() {
 })
 
 const displayBtn = document.getElementById('display-btn')
-const displayForm = document.getElementById('d-form')
-displayForm.style.display = 'none'
-console.log(displayForm)
+
+
 displayBtn.addEventListener('click', function() {
-    if (displayForm.style.display = 'none') {
-        displayForm.style.display = 'block'
-    } else (displayForm.style.display = 'block') 
-        displayForm.style.display = 'none'
+    const displayForm = document.getElementById('d-form')
     
+    if (displayForm.style.display == 'block') {
+        displayForm.style.display = 'none'
+        console.log(displayForm)
+    } else { 
+        displayForm.style.display = 'block'
+        console.log(displayForm)
+    }
 })
