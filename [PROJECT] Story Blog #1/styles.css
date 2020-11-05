@@ -3,6 +3,10 @@
     padding-bottom: 1rem;
 }
 
+#d-form {
+    display: none;
+}
+
 #footer {
     background-color: black;
     height: 10vh;
